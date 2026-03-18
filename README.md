@@ -171,23 +171,6 @@ Transformer le presse-papiers en un **outil de productivité avancé** :
 
 ---
 
-## 🤝 Contribution
-
-Le projet évolue rapidement 🚀  
-Tu peux :
-
-- Proposer des idées
-- Ouvrir des issues
-- Contribuer au code
-
----
-
-## 👤 Auteur
-
-Développé par [Nuxhi](https://github.com/Nuxhi)
-
----
-
 ## ⭐ Support
 
 Si le projet te plaît :
