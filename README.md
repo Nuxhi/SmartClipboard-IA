@@ -168,10 +168,9 @@ Transform the clipboard into a **powerful productivity tool**:
 - [x] Basic clipboard manager
 - [x] Tray integration
 - [x] Multi-copy system
-- [ ] pywin32 migration
 - [ ] AI integration
-- [ ] GUI interface
-- [ ] Cross-platform support
+- [ ] pywin32 migration
+- [ ] GUI interface ?????
 
 ---
 
@@ -195,8 +194,6 @@ Developed by [Nuxhi](https://github.com/Nuxhi)
 
 If you like this project:
 - ⭐ Star the repo
-- 🍴 Fork it
-- 🧠 Share ideas
 
 ---
 
