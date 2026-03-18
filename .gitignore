@@ -1,0 +1,63 @@
+# 🐍 Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# 🔧 Distribution / packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+*.egg
+
+# 🧪 Tests / coverage
+.coverage
+.coverage.*
+htmlcov/
+.pytest_cache/
+.mypy_cache/
+
+# 📦 Environnements virtuels
+venv/
+.env/
+.env.*
+.venv/
+
+# 🖥️ OS files
+.DS_Store
+Thumbs.db
+
+# 🧠 IDE / éditeurs
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# 🧾 Logs
+*.log
+
+# 🔐 Variables sensibles
+.env
+.env.local
+
+# 🧪 Fichiers temporaires
+*.tmp
+*.bak
+*.swp
+
+# 🖼️ Cache Pillow / images temporaires
+*.png~
+*.jpg~
+
+# ⚙️ PyInstaller (si tu build plus tard)
+*.spec
+
+# 🧵 Thread / runtime artifacts (optionnel)
+*.pid
+
+# 🧠 IA / data futurs (si tu ajoutes des modèles)
+models/
+data/
+
+# 📋 Clipboard dumps (au cas où)
+clipboard_history.txt
