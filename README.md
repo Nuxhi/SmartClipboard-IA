@@ -49,3 +49,160 @@ ClipboardSense enhances the default clipboard behavior by allowing you to:
 ---
 
 ## 🏗️ Project Structure
+
+main.py
+app/
+├── tray.py
+├── clipboardmanager.py
+
+### 🔹 `main.py`
+- Handles global shortcuts
+- Launches system tray thread  
+- Manages app lifecycle :contentReference[oaicite:0]{index=0}
+
+### 🔹 `clipboardmanager.py`
+- Core clipboard logic
+- Stores copied elements
+- Handles paste behavior
+- Simulates Ctrl+V when needed :contentReference[oaicite:1]{index=1}
+
+### 🔹 `tray.py`
+- System tray UI
+- Toggle system ON/OFF
+- Clipboard mode selection :contentReference[oaicite:2]{index=2}
+
+---
+
+## ⚙️ How It Works
+
+1. You copy multiple elements → stored in a list
+2. Default clipboard is overridden
+3. When you paste:
+   - The app decides what to paste
+   - Simulates Ctrl+V
+   - Maintains custom behavior
+
+---
+
+## 🔥 Why This Project?
+
+The default clipboard is limited:
+- ❌ Only one item stored
+- ❌ No history
+- ❌ No control
+
+ClipboardSense solves this by:
+- ✔ Keeping history
+- ✔ Giving control
+- ✔ Increasing productivity
+
+---
+
+## ⚠️ Current Limitations
+
+- Uses `pyperclip` (text only)
+- Some timing issues (`sleep` based)
+- Limited clipboard format support
+- No GUI (tray only)
+
+---
+
+## 🚀 Upcoming Improvements
+
+### 🧠 Clipboard Engine Upgrade
+- Replace `pyperclip` → **pywin32**
+- Better performance
+- Native Windows integration
+- Support for:
+  - Images 🖼️
+  - Files 📁
+  - Advanced formats
+
+---
+
+### 🤖 AI Integration (Major Feature)
+
+A built-in AI assistant will allow:
+
+- 📖 Get definition of selected text
+- ✍️ Reformulate selected content
+- 🧠 Context-aware explanations
+- ⚡ Instant productivity boost
+
+---
+
+### 🖥️ UI Improvements
+- Full graphical interface
+- Clipboard history viewer
+- Search & filter
+- Favorites / pinned items
+
+---
+
+### ⚡ Performance
+- Remove `time.sleep`
+- Event-based clipboard detection
+- Better keyboard handling
+
+---
+
+## 🛠️ Technologies
+
+- Python
+- pystray
+- keyboard
+- pyperclip (temporary)
+
+---
+
+## 🎯 Vision
+
+Transform the clipboard into a **powerful productivity tool**:
+
+> From a simple copy-paste → to an intelligent workflow system
+
+---
+
+## 📌 Roadmap
+
+- [x] Basic clipboard manager
+- [x] Tray integration
+- [x] Multi-copy system
+- [ ] pywin32 migration
+- [ ] AI integration
+- [ ] GUI interface
+- [ ] Cross-platform support
+
+---
+
+## 🤝 Contribution
+
+This project is evolving fast 🚀  
+Feel free to:
+- Open issues
+- Suggest features
+- Improve code
+
+---
+
+## 👤 Author
+
+Developed by [Nuxhi](https://github.com/Nuxhi)
+
+---
+
+## ⭐ Support
+
+If you like this project:
+- ⭐ Star the repo
+- 🍴 Fork it
+- 🧠 Share ideas
+
+---
+
+## ⚠️ Disclaimer
+
+This project modifies default keyboard behavior.  
+Use with caution depending on your system environment.
+
+---
