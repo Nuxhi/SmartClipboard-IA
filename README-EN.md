@@ -21,7 +21,7 @@ This project allows you to copy multiple items without overwriting the previous 
 
 ## 🧠 Concept
 
-ClipboardSense enhances the default clipboard behavior by allowing you to:
+SmartClipboard enhances the default clipboard behavior by allowing you to:
 
 - 📋 Store multiple copied elements
 - 🔁 Control how they are pasted
@@ -91,7 +91,7 @@ The default clipboard is limited:
 - ❌ No history
 - ❌ No control
 
-ClipboardSense solves this by:
+SmartClipboard solves this by:
 - ✔ Keeping history
 - ✔ Giving control
 - ✔ Increasing productivity
