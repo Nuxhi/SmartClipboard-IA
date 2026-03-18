@@ -173,17 +173,6 @@ Transform the clipboard into a **powerful productivity tool**:
 - [ ] GUI interface ?????
 
 ---
-
-## 🤝 Contribution
-
-This project is evolving fast 🚀  
-Feel free to:
-- Open issues
-- Suggest features
-- Improve code
-
----
-
 ## 👤 Author
 
 Developed by [Nuxhi](https://github.com/Nuxhi)
