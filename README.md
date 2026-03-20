@@ -26,6 +26,7 @@ SmartClipboard-IA améliore le fonctionnement du presse-papiers classique en per
 - Contient un AgentIA pour corriger / reformuler vos phrases / mot enregistrer
 
 ---
+#⌨️ Raccourcis globaux :
 
 |   Commande       |  Fonctionalité     | disponibilité      | Etat actuel             | Debug uniquement       |
 |---               |:-:    |:-:    |:-:    |--:    |
@@ -33,6 +34,8 @@ SmartClipboard-IA améliore le fonctionnement du presse-papiers classique en per
 | CTRL + V         | Collage d'un éléments      | DISPONIBLE | Mise a jours futur      |  ❌     |
 | CTRL + SHIFT + V | Coller tous les éléments   | DISPONIBLE | Mise a jours futur      |  ❌     |
 | CTRL + SHIFT + C | vider L'historique         | DISPONIBLE | FINI                    |  ✔️     |
+| ????             | Corriger phrase / mots     | BIENTOT    | En cours                |  ❌     |
+| ????             | Reformuler la phrase       | BIENTOT    | En cours                |  ❌     |
 
 ## ✨ Fonctionnalités actuelles
 
