@@ -1,3 +1,4 @@
+
 # 📋 SmartClipboard-IA (WIP 🚧)
 
 > ⚡ Un gestionnaire de presse-papiers intelligent permettant de stocker plusieurs éléments copiés sans perdre les précédents.
@@ -16,6 +17,15 @@
 
 ---
 
+## 🔥 Pourquoi ce projet ?
+
+Le presse-papiers classique est limité :
+
+- ❌ Un seul élément stocké
+- ❌ Pas d’historique
+- ❌ Aucun contrôle
+---
+
 ## 🧠 Concept
 
 SmartClipboard-IA améliore le fonctionnement du presse-papiers classique en permettant de :
@@ -26,7 +36,21 @@ SmartClipboard-IA améliore le fonctionnement du presse-papiers classique en per
 - Contient un AgentIA pour corriger / reformuler vos phrases / mot enregistrer
 
 ---
-#⌨️ Raccourcis globaux :
+
+## 📌 Roadmap
+
+- [x] Gestion multi-copie
+- [x] Intégration tray
+- [x] Système de collage
+- [x] Intégration IA (En vrai pas encore, y'a 80% du code ajouté la)
+- [ ] Migration vers pywin32
+- [ ] Interface graphique ????
+- [ ] Support multiplateforme
+
+---
+
+
+## ⌨️ Raccourcis globaux :
 
 |   Commande       |  Fonctionalité     | disponibilité      | Etat actuel             | Debug uniquement       |
 |---               |:-:    |:-:    |:-:    |--:    |
@@ -43,14 +67,9 @@ SmartClipboard-IA améliore le fonctionnement du presse-papiers classique en per
 - 🔁 Système de collage intelligent :
   - Dernier élément copié
   - Premier élément copié
-- ⌨️ Raccourcis globaux :
-  - `Ctrl + C` → stocker les éléments
-  - `Ctrl + V` → collage personnalisé
-  - `Ctrl + Shift + V` → coller tous les éléments (IN PROGRESS)
-  - `Ctrl + Shift + C` → vider l’historique (DEBUG)
 - 🖥️ Interface via icône système (tray - IN PROGRESS)
-- 🔄 Activation / désactivation du système (FUTUR)
-- ⚙️ Choix du mode de collage (DISPONIBLE)
+- 🔄 Activation / désactivation du système (IN PROGRESS)
+- ⚙️ Choix du mode de collage
 
 ---
 
@@ -93,14 +112,6 @@ app/
 
 ---
 
-## 🔥 Pourquoi ce projet ?
-
-Le presse-papiers classique est limité :
-
-- ❌ Un seul élément stocké
-- ❌ Pas d’historique
-- ❌ Aucun contrôle
----
 
 ## ⚠️ Limitations actuelles
 
@@ -162,25 +173,6 @@ Un assistant IA sera intégré pour :
 - Ollama
 - MISTRAL
 
----
-
-## 🎯 Vision
-
-Transformer le presse-papiers en un **outil de productivité avancé** :
-
-> D’un simple copier-coller → à un système intelligent et puissant
-
----
-
-## 📌 Roadmap
-
-- [x] Gestion multi-copie
-- [x] Intégration tray
-- [x] Système de collage
-- [x] Intégration IA (En vrai pas encore, y'a 80% du code ajouté la)
-- [ ] Migration vers pywin32
-- [ ] Interface graphique ????
-- [ ] Support multiplateforme
 
 ---
 
