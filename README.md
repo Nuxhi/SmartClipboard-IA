@@ -165,7 +165,7 @@ Transformer le presse-papiers en un **outil de productivité avancé** :
 - [x] Intégration tray
 - [x] Système de collage
 - [ ] Migration vers pywin32
-- [ ] Intégration IA
+- [X] Intégration IA
 - [ ] Interface graphique ????
 - [ ] Support multiplateforme
 
