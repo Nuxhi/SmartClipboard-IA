@@ -20,13 +20,18 @@
 
 SmartClipboard-IA améliore le fonctionnement du presse-papiers classique en permettant de :
 
-- 📋 Stocker plusieurs éléments copiés
-- 🔁 Contrôler la manière dont ils sont collés
-- ⚡ Remplacer le comportement par défaut de Ctrl+C / Ctrl+V
-
-👉 Fini la perte de vos anciennes copies.
+- Stocker plusieurs éléments copiés
+- Contrôler la manière dont ils sont collés
+- Remplacer le comportement par défaut de Ctrl+C / Ctrl+V
+- Contient un AgentIA pour corriger / reformuler vos phrases / mot enregistrer
 
 ---
+
+|TEST   |       |       |       |       |
+|---    |:-:    |:-:    |:-:    |--:    |
+|       |       |       |       |       |
+|       |       |       |       |       |
+|       |       |       |       |       |
 
 ## ✨ Fonctionnalités actuelles
 
@@ -37,11 +42,11 @@ SmartClipboard-IA améliore le fonctionnement du presse-papiers classique en per
 - ⌨️ Raccourcis globaux :
   - `Ctrl + C` → stocker les éléments
   - `Ctrl + V` → collage personnalisé
-  - `Ctrl + Shift + V` → coller tous les éléments
-  - `Ctrl + Shift + C` → vider l’historique
-- 🖥️ Interface via icône système (tray)
-- 🔄 Activation / désactivation du système
-- ⚙️ Choix du mode de collage
+  - `Ctrl + Shift + V` → coller tous les éléments (IN PROGRESS)
+  - `Ctrl + Shift + C` → vider l’historique (DEBUG)
+- 🖥️ Interface via icône système (tray - IN PROGRESS)
+- 🔄 Activation / désactivation du système (FUTUR)
+- ⚙️ Choix du mode de collage (DISPONIBLE)
 
 ---
 
@@ -91,13 +96,6 @@ Le presse-papiers classique est limité :
 - ❌ Un seul élément stocké
 - ❌ Pas d’historique
 - ❌ Aucun contrôle
-
-SmartClipboard-IA apporte :
-
-- ✔ Historique
-- ✔ Contrôle total
-- ✔ Gain de productivité
-
 ---
 
 ## ⚠️ Limitations actuelles
@@ -120,6 +118,14 @@ SmartClipboard-IA apporte :
   - Images 🖼️
   - Fichiers 📁
   - Formats avancés
+ 
+- Intégration d'agent IA local ou disponible sur le cloud
+  - Correction des fautes
+  - Reformulation des phrases
+
+- Interface web
+  - Géré facilement le comportement de vos agent grace a une interface web
+  - Géré facilement les paramètres de l'app avec une interface web moderne
 
 ---
 
@@ -139,6 +145,7 @@ Un assistant IA sera intégré pour :
 - Suppression des `time.sleep`
 - Détection d’événements système
 - Meilleure gestion clavier
+- Précharger les models afin que la premier utilisation sois rapide
 
 ---
 
@@ -148,6 +155,8 @@ Un assistant IA sera intégré pour :
 - pystray
 - keyboard
 - pyperclip _(temporaire)_
+- Ollama
+- MISTRAL
 
 ---
 
@@ -164,8 +173,8 @@ Transformer le presse-papiers en un **outil de productivité avancé** :
 - [x] Gestion multi-copie
 - [x] Intégration tray
 - [x] Système de collage
+- [x] Intégration IA (En vrai pas encore, y'a 80% du code ajouté la)
 - [ ] Migration vers pywin32
-- [X] Intégration IA (En vrai pas encore, y'a 80% du code ajouté la)
 - [ ] Interface graphique ????
 - [ ] Support multiplateforme
 
