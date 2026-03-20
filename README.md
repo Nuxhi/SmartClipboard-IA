@@ -27,11 +27,12 @@ SmartClipboard-IA améliore le fonctionnement du presse-papiers classique en per
 
 ---
 
-|TEST   |       |       |       |       |
-|---    |:-:    |:-:    |:-:    |--:    |
-|       |       |       |       |       |
-|       |       |       |       |       |
-|       |       |       |       |       |
+|   Commande       |  Fonctionalité     | disponibilité      | Etat actuel             | Debug uniquement       |
+|---               |:-:    |:-:    |:-:    |--:    |
+| CTRL + C         | Stocker les éléments       | DISPONIBLE | FINI                    |  ❌     |
+| CTRL + V         | Collage d'un éléments      | DISPONIBLE | Mise a jours futur      |  ❌     |
+| CTRL + SHIFT + V | Coller tous les éléments   | DISPONIBLE | Mise a jours futur      |  ❌     |
+| CTRL + SHIFT + C | vider L'historique         | DISPONIBLE | FINI                    |  ✔️     |
 
 ## ✨ Fonctionnalités actuelles
 
