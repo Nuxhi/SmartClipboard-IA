@@ -22,8 +22,13 @@ def main():
     keyboard.add_hotkey('ctrl+c', app.clipboardmanager.copy, suppress=False)
     keyboard.add_hotkey('ctrl+shift+v', app.clipboardmanager.all_past, suppress=False)
 
+    ## Zone dédié au debugging et au développement
     keyboard.add_hotkey('ctrl+shift+c', app.clipboardmanager.lst_cpt_clear, suppress=False)
+    
+    ## zone dédié à l'ia
     keyboard.add_hotkey('shift+v', app.clipboardmanager.past_ia_correction, suppress=False)
+    
+    
     # Garder le programme actif
     keyboard.wait()
 

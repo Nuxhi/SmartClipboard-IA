@@ -76,6 +76,10 @@ for i, phrase in enumerate(phrases_test, 1):
     print(f"{'='*60}")
     local_generation(phrase)
     print()
+    with open("corrections.txt", "a", encoding="utf-8") as f:
+        f.write(f"Phrase {i} : {phrase}\n")
+        f.write(f"Correction : {local_generation(phrase)}\n")
+        f.write(f"{'-'*60}\n")
 
 end_time = time.time()
 print(f"\nTime taken for all corrections: {end_time - start_time} seconds")

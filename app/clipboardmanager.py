@@ -27,6 +27,7 @@ def change_copy_style(setting):
     elif setting == "copy_first":
         cs = 0
 
+#@DeprecationWarning
 def action_data(action, text=None):
     global lst_item_cpt
     '''
@@ -72,6 +73,13 @@ def copy():
     
 
 def past_manager():
+    '''
+    Permet de gérer le collage des éléments du tableau
+    en fonction du copy style choisit par l'utilisateur
+    vide également le tableau si celui ci est vide pour éviter les erreurs d'index
+    si le tableau et vide, on colle le dernier élément copier (lst_item_cpt) afin 
+    de ne pas perdre le comportement de base du ctrl+c ctrl+v
+    '''
     global lst_item_cpt
     try:
         if len(lst_cpt) > 0:
@@ -114,6 +122,9 @@ def past_ia_correction():
     corrected = app.ia.local_generation(text)
     pyperclip.copy(corrected)
     time.sleep(0.1)
+    keyboard.send("ctrl+v")
+
+
 
 def all_past():
     for i in range(len(lst_cpt)):

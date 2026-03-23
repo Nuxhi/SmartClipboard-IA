@@ -93,6 +93,12 @@ def local_generation(phrase):
     start_time = time.time()
     response: ChatResponse = chat(
         model=choose_model[0],
+        options={
+            'temperature': 0.0,
+            'top_p': 0.1,
+            'num_predict': 100
+        },
+        keep_alive="30s",
         messages=[
             {
                 'role': 'system',
@@ -100,7 +106,7 @@ def local_generation(phrase):
             },
             {
                 'role': 'user',
-                'content': phrase
+                'content': f"Corrige cette phrase : {phrase}"
             }
         ]
     )
