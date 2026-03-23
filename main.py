@@ -20,9 +20,10 @@ def main():
 
     keyboard.add_hotkey('ctrl+v', app.clipboardmanager.past, suppress=True)
     keyboard.add_hotkey('ctrl+c', app.clipboardmanager.copy, suppress=False)
-    keyboard.add_hotkey('ctrl+shift+v', app.clipboardmanager.all_copy, suppress=False)
+    keyboard.add_hotkey('ctrl+shift+v', app.clipboardmanager.all_past, suppress=False)
 
     keyboard.add_hotkey('ctrl+shift+c', app.clipboardmanager.lst_cpt_clear, suppress=False)
+    keyboard.add_hotkey('shift+v', app.clipboardmanager.past_ia_correction, suppress=False)
     # Garder le programme actif
     keyboard.wait()
 

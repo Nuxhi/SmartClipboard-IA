@@ -16,6 +16,7 @@ phrases_test = [
     "j'ai pris c'est document",
     "il a terminer sont travail",
     
+    
     #  classiques
     "j'ai essayer de comprendre mais j'y arrive pas",
     "elle a décider de partir plus tôt",
@@ -54,7 +55,7 @@ phrases_test = [
     "bonjour j'ai un petit soucis avec mon programme il fonctionne pas comme prévu et je comprend pas pourquoi",
     "j'ai essayer de debug mais j'arrive pas a trouver d'ou viens le probleme",
     "j'ai verifier plusieurs fois le code mais il y a toujours une erreur qui apparait",
-    
+
     # Cas piégeux
     "il ce sont parler longtemps",
     "elle c'est tromper de réponse",
@@ -62,11 +63,11 @@ phrases_test = [
     "on c'est vu hier soir",
     "il a pris sa veste et c'est chaussures",
     
+    
     #Réaliste
     "j'ai pas trop compris pourquoi sa fonctionne pas alors que hier sa marcher tres bien",
     "si quelqu'un a une idée de se qui cloche je suis preneur",
-    "j'ai essayer plein de truc mais rien n'a marcher"
-]
+    "j'ai essayer plein de truc mais rien n'a marcher"]
 
 # Boucle pour corriger chaque phrase
 for i, phrase in enumerate(phrases_test, 1):

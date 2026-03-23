@@ -11,13 +11,13 @@ from ollama import chat
 from ollama import ChatResponse
 
 import time
-import ia_prompt
+import app.ia_prompt
 
 load_dotenv()
 
 use_cloud = False
 choose_model = ["mistral", "mistral:latest"] 
-PROMPT = ia_prompt.system_prompt()
+PROMPT = app.ia_prompt.system_prompt()
 
 def init_ollama():
     models_lst = []
@@ -108,8 +108,11 @@ def local_generation(phrase):
     print(response['message']['content'])
     end_time = time.time()
     print(f"\nTime taken: {end_time - start_time} seconds")
+    return (response['message']['content'])
 
 
 init_ollama()
 #cloud_generation("Je suis aller au marché hier et j'ai acheter des pommes.")
-local_generation("Je suis aller au marché hier et j'ai acheter des pommes.")
+#local_generation("Je suis aller au marché hier et j'ai acheter des pommes.")
+
+

@@ -3,12 +3,14 @@ import pyperclip
 import time
 import warnings
 
+import app.ia 
+
 # Activer les DeprecationWarning
 warnings.simplefilter("always", DeprecationWarning)
 
 lst_cpt = []
 lst_item_cpt = ""
-cs = -1
+cs = 0
 
 bad_caractere_pattern = [" '\r\n' "]
 
@@ -69,13 +71,8 @@ def copy():
     action_data(1, text)
     
 
-def past():
-    '''
-    permet de coller un element du tableau afin de l'imposé la ou l'utilisateur le souhaite
-    Cette fonction est appellé lors de l'appuie sur ctrl+v
-    elle simule également un appluie ctrl+v car celui-ci a était bloquer dans le main.py afin déviter les conflits avec le clipboard originel de windows
-    '''
-
+def past_manager():
+    global lst_item_cpt
     try:
         if len(lst_cpt) > 0:
             text = lst_cpt[cs]
@@ -92,6 +89,16 @@ def past():
         action_data(0)
         return
     
+    return text
+
+
+def past():
+    '''
+    permet de coller un element du tableau afin de l'imposé la ou l'utilisateur le souhaite
+    Cette fonction est appellé lors de l'appuie sur ctrl+v
+    elle simule également un appluie ctrl+v car celui-ci a était bloquer dans le main.py afin déviter les conflits avec le clipboard originel de windows
+    '''
+    text = past_manager()
     action_data(0, text)
     pyperclip.copy(text)
 
@@ -99,12 +106,16 @@ def past():
     keyboard.send("ctrl+v")
 
 
-def all_copy():
+def past_ia_correction():
     '''
-    Permet de vider le tableau complet d'un coup
-    a la suite d'un ctrl+v+v
+    Permet de coller le texte corriger par l'ia
     '''
+    text = past_manager()
+    corrected = app.ia.local_generation(text)
+    pyperclip.copy(corrected)
     time.sleep(0.1)
+
+def all_past():
     for i in range(len(lst_cpt)):
         past()
 
