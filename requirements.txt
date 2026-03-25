@@ -4,4 +4,4 @@ pystray==0.19.5
 ollama==0.6.1
 dotenv==0.9.9
 fastapi
-uvicorn==0.42.0
+uvicorn[standard]
