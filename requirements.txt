@@ -1,5 +1,6 @@
-keyboard
-pyperclip
-pystray
-ollama
-dotenv
+keyboard==0.13.5
+pyperclip==1.11.0
+pystray==0.19.5
+ollama==0.6.1
+dotenv==0.9.9
+fastapi
