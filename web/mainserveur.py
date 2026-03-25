@@ -13,6 +13,11 @@ path = os.path.dirname(os.path.abspath(__file__))
 def get():
     return FileResponse(os.path.join(path, "index.html"))
 
+@app.get("/test")
+def test():
+    return "Hello tester"
+
+@app.post("/inverse")
 
 @app.websocket("/ws")
 async def websocket_endpoint(websocket: WebSocket):
