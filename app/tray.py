@@ -12,6 +12,7 @@ import uvicorn
 from . import clipboardmanager
 # Import web.serveur sera fait localement pour éviter boucle circulaire
 # Import main sera fait localement dans close_tray() pour éviter boucle circulaire
+import web.launch_web_ui
 
 # Utile partout dans le code
 import time
@@ -160,7 +161,7 @@ def run_tray():
                 )
             ),
             #item("Documentation :", lambda),
-            item("A propos", start_serveur)
+            item("A propos", web.launch_web_ui.start_server)
             #item("Quit", close_tray)
             )
         

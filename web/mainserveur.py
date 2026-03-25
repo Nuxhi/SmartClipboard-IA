@@ -2,7 +2,7 @@ from fastapi import FastAPI, WebSocket, WebSocketDisconnect
 from fastapi.responses import FileResponse
 import os
 import threading
-import launch_web_ui 
+from web import launch_web_ui
 
 app = FastAPI()
 
@@ -28,6 +28,6 @@ async def websocket_endpoint(websocket: WebSocket):
 
         def stop():
             launch_web_ui.stop_server()
-            os._exit(0)
+            #os._exit(0)
 
         threading.Thread(target=stop, daemon=True).start()

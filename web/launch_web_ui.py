@@ -11,7 +11,7 @@ thread = None
 def run_server():
     global server
     print("Run server")
-    config = uvicorn.Config("mainserveur:app", host="127.0.0.1", port=6767, log_level="warning")
+    config = uvicorn.Config("web.mainserveur:app", host="127.0.0.1", port=6767, log_level="warning")
     server = uvicorn.Server(config)
     server.run()
     print("fin de run_server")
