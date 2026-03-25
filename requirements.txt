@@ -3,3 +3,4 @@ pyperclip
 pystray
 ollama
 dotenv
+fastapi[standard]

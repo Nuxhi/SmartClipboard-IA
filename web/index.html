@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>SmartClipboard</h1>
+    
+    <script>
+    //Généré par IA car je ne savais pas faire.
+    // Je dois me penché sur le sujet pour mieux comprendre.
+    (function () {
+            const protocol = window.location.protocol === "https:" ? "wss" : "ws";
+            const ws = new WebSocket(protocol + "://" + window.location.host + "/ws");
+
+            function closeSocket() {
+                if (ws.readyState === WebSocket.CLOSING || ws.readyState === WebSocket.CLOSED) {
+                    return;
+                }
+                ws.close();
+            }
+
+            window.addEventListener("pagehide", closeSocket);
+            window.addEventListener("beforeunload", closeSocket);
+        })();
+    </script>
+</body>
+</html>
