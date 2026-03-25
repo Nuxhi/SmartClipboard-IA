@@ -3,7 +3,7 @@ from fastapi.responses import FileResponse
 import os
 import threading
 from web import launch_web_ui
-
+from app import tray
 app = FastAPI()
 
 path = os.path.dirname(os.path.abspath(__file__))
@@ -17,7 +17,10 @@ def get():
 def test():
     return "Hello tester"
 
-@app.post("/inverse")
+@app.get("/inverse")
+def inverse():
+    tray.last_clipboard()
+    return "LastCopy"
 
 @app.websocket("/ws")
 async def websocket_endpoint(websocket: WebSocket):
