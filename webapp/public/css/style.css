@@ -1,0 +1,46 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(238, 238, 238);
+}
+
+
+.main-container {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+ul  {
+    list-style: none;
+}
+
+.container {
+    background-color: rgb(252, 252, 252);
+    padding: 10px 100px 10px 100px ;
+    border-radius: 10px;
+}
+
+.container ul {
+    display: flex;
+    margin: 0px auto;
+    gap: 50px;
+    
+}
+
+.container ul li {
+    transition: 0.2s;
+    background-color: aquamarine;
+    padding: 10px;
+}
+
+.container ul li:hover {
+    transition: 0.2s;
+    background-color: black;
+    color: white;
+}
