@@ -8,9 +8,15 @@
     <title>menu</title>
 </head>
 <body>
+    <nav id="main-navbar">
+        <button onclick="showSection('cloud')">Cloud</button>
+        <button onclick="showSection('local')">Local</button>
+        <button onclick="showSection('setting')">Settings</button>
+    </nav>
+    
     <div class="main-container">
             
-            <div class="container cloud">
+            <div class="container cloud hidden" id="cloud">
 
                 <ul>
                     <li>Model personnalisé</li>
@@ -20,8 +26,8 @@
 
             </div>
             
-            <!--
-            <div class="local">
+            
+            <div class="container local hidden" id="local">
 
                 <ul>
                     <li>Model personnalisé</li>
@@ -31,7 +37,7 @@
 
             </div>
 
-            <div class="setting">
+            <div class="container setting hidden" id="setting">
 
                 <ul>
                     <li>modification du prompt</li>
@@ -39,7 +45,25 @@
                     <li>Autre</li>
                 </ul>
             </div>
-            -->
+            
     </div>
+    
+    <script>
+        function showSection(sectionId) {
+            // Masquer toutes les sections
+            document.getElementById('cloud').classList.add('hidden');
+            document.getElementById('local').classList.add('hidden');
+            document.getElementById('setting').classList.add('hidden');
+            
+            // Afficher la section demandée
+            document.getElementById(sectionId).classList.remove('hidden');
+            
+            // Mettre à jour le bouton actif
+            document.querySelectorAll('#main-navbar button').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            event.target.classList.add('active');
+        }
+    </script>
 </body>
 </html>

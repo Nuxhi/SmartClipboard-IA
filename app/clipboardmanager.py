@@ -125,10 +125,10 @@ def past_ia_correction():
     keyboard.send("ctrl+v")
 
 
-
 def all_past():
     for i in range(len(lst_cpt)):
         past()
+
 
 def lst_cpt_clear():
     return lst_cpt.clear()

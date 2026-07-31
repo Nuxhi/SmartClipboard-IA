@@ -18,7 +18,7 @@ getAC = False  # Variable pour suivre l'état de "Coller tout les elements"
 
 # Variable pour suivre l'état du toggle
 #Le toggle signifie que le programme est actif ou non, si le toggle est désactivé, les raccourcis clavier seront remplacé par ceux de l'app.
-is_running = False
+is_running = True
 icon = None  # Variable globale pour le tray  
 
 
